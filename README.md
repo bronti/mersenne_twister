@@ -2,7 +2,7 @@
 
 Details on MT [here](http://en.wikipedia.org/wiki/Mersenne_Twister)
 
-Info about fump ahead using Polynomial Multiplication method [here](http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/JUMP/index.html)
+Info about jump ahead using Polynomial Multiplication method [here](http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/JUMP/index.html)
 and [here](http://www.math.sci.hiroshima-u.ac.jp/~m-MAT/MT/ARTICLES/mt.pdf)
 
 ## Usage
