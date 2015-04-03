@@ -50,7 +50,7 @@ void jump_ahead_timing()
             << "sec." << " time flies!" << std::endl;
 
   start = clock();
-  std::cout << "\ncomparing with traditional method ..." << std::endl;
+  std::cout << "\ncomparing with traditional method:" << std::endl;
   for(unsigned i = 0; i < jump_step; ++i)
   {
     tortoise.get_random();
@@ -72,7 +72,7 @@ void jump_ahead_timing()
     }
     else if (i == 5*jump_step/6)
     {
-      std::cout << "dont panic. it almost complete ..." << std::endl;
+      std::cout << "dont panic. it's almost completed ..." << std::endl;
     }
   }
   if (tortoise != hare)
@@ -91,7 +91,6 @@ int main()
   cout << (distribution_test() ? "Distribution smoke test passed ^.^"
                               : "Something is wrong with distribution. Don't panic and call FBI.")
                                  << std::endl << std::endl;
-
   jump_ahead_timing();
 }
 
