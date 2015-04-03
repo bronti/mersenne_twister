@@ -12,8 +12,9 @@ and [here](http://www.math.sci.hiroshima-u.ac.jp/~m-MAT/MT/ARTICLES/mt.pdf)
 
 ## Usage
 
-Before calling `jump_ahead` or `get_jump_aheaded_state` you need to initialize it by `init_jump`. Notice, that it will
-force MT to increase it's state by 2 * k, where k = 19937 is Mersenne Twister exponent.
+Before calling `jump_ahead` or `get_jump_aheaded_state` you need to initialize it by `init_jump`. Notice, that it will force MT to increase it's state by 2 \* k, where k = 19937 is Mersenne Twister exponent.
+
+It takes 2 \* k - 1 values of output function to predict the "jumped" state so firstly, there is no point in jumping less than 2 \* k steps. Secondly,`get_jump_aheaded_state` also causes an increase of original MT's state by 2 \* k - 1 steps.
 
 ####Example here:
 
