@@ -5,6 +5,11 @@ Details on MT [here](http://en.wikipedia.org/wiki/Mersenne_Twister)
 Info about jump ahead using Polynomial Multiplication method [here](http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/JUMP/index.html)
 and [here](http://www.math.sci.hiroshima-u.ac.jp/~m-MAT/MT/ARTICLES/mt.pdf)
 
+## Requirements
+
+[NTL](http://www.shoup.net/ntl/) library. Version 9.0.2 should be ok.
+
+
 ## Usage
 
 Before calling `jump_ahead` or `get_jump_aheaded_state` you need to initialize it by `init_jump`. Notice, that it will
